@@ -14,7 +14,7 @@ class GithubGraphBuilder
   def start
     puts @seed
     process_user(@seed)
-    puts "    #{@graph[user].to_a}"
+    puts "    #{@graph[@seed].to_a}"
     first_tier = @graph[@seed]
 
     puts "FIRST_TIER: #{first_tier.to_a}"
